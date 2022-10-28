@@ -40,7 +40,7 @@ int main()
         if (p == 0 || p >= t + 2)
 
         {
-          cout << "unable to add please enter valid position" << endl;
+          cout << "unable to add please enter valid position" << endl
         }
         else
         {
@@ -161,7 +161,7 @@ int main()
     case 'b':
       cout << "a before any value" << endl;
       cout << "b after any value" << endl;
-      cout << "c at a given value" << endl;
+      cout << "c at a given position" << endl;
       cin >> click3;
       switch (click3)
       { // before any value
