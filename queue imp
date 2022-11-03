@@ -1,5 +1,5 @@
 #include<iostream>
-#define maxqueue 10
+#define maxqueue 3
 using namespace std;
 
 class queue{
@@ -16,7 +16,7 @@ queue()
     
     if(rear==maxqueue-1)
     {
-        cout<<"queue is full";
+        cout<<"\nqueue is full\n";
         return 0;
    }
     else
@@ -30,13 +30,15 @@ queue()
  { int v;  
     if( front>rear )
     {
-        cout<<"queue is empty";
+        cout<<"\nqueue is empty\n";
         return 0;
        
     }
     else
-    {
+    {  
+    
       v=items[front];
+      front++;
         return v;
  }
  }
@@ -69,7 +71,7 @@ int main()
 
         case 2:
             x = q1.del();
-            cout << "---- value is ----" << x << endl;
+            cout << "---- value is ---\n" << x << endl;
 
             break;
 
