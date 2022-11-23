@@ -194,14 +194,17 @@ int main()
                 cout << "enter value that are already in list" << endl;
                 cin >> val;
                 l.after(val, v);
+                break;
             case 5:
                 cout << "enter nth  position from last " << endl;
                 cin >> pos;
                 l.addnth(pos, v);
+                break;
             }
             break;
         case 2:
             l.diplay();
+            break;
         }
     } while (click == 1 || click == 2 || click == 3 || click == 4 || click2 == 1 || click2 == 2 || click2 == 3);
 
