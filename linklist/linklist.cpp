@@ -118,7 +118,7 @@ public:
     void after(int n, int p)
     {
         node *cur = head, *next = cur->next;
-        while (next != nullptr)
+        while (cur != nullptr)
 
         {
             if (cur->data == n)
@@ -132,7 +132,7 @@ public:
             }
 
             cur = cur->next;
-            next = cur->next->next;
+            next = next->next;
         }
     }
 
